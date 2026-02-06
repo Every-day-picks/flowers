@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Flower Craft Comparison | Everyday Picks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #1a1a1a; --accent: #ff8fab; --bg-light: #f9fafb; --white: #ffffff; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg-light); color: var(--primary); line-height: 1.6; }
+        header { position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #eee; padding: 12px 5%; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .back-btn { text-decoration: none; color: var(--primary); font-weight: 600; font-size: 14px; padding: 8px 16px; border: 1px solid #ddd; border-radius: 6px; }
+        .hero { padding: 40px 5%; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 42px; margin-bottom: 10px; }
+        .comparison-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+        .product-option { background: var(--white); border: 1px solid #e5e7eb; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; transition: transform 0.3s ease; }
+        .product-option:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .option-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        .badge { align-self: start; background: #fee2e2; color: #ef4444; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; margin-bottom: 10px; }
+        .option-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; height: 50px; overflow: hidden; }
+        .price-tag { font-size: 24px; font-weight: 800; margin: 15px 0; color: #111827; }
+        .feature-list { list-style: none; padding: 0; margin: 0 0 20px 0; font-size: 14px; color: #4b5563; text-align: left; flex-grow: 1; }
+        .feature-list li { margin-bottom: 8px; display: flex; align-items: center; }
+        .feature-list li::before { content: "•"; color: var(--accent); font-weight: bold; margin-right: 8px; }
+        .buy-link { display: block; background: var(--primary); color: var(--white); text-decoration: none; padding: 14px; border-radius: 8px; font-weight: 700; text-align: center; transition: 0.2s; }
+        .buy-link:hover { background: #000; }
+        @media (max-width: 900px) { .comparison-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://every-day-picks.github.io/All-picks/" class="back-btn">← Back to All Everyday Picks</a>
+        <div style="font-weight: 900; font-size: 22px;">EVERYDAY<span style="color: var(--accent);">PICKS</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Craft Your Dream Bouquet</h1>
+        <p>Compare the best deals on handmade tulip kits and bulk supplies for your next DIY project.</p>
+
+        <div class="comparison-grid">
+            <div class="product-option">
+                <span class="badge">28% OFF - Best Seller</span>
+                <img src="for2.jpg" class="option-img" alt="10pc Tulip Kit">
+                <h3 class="option-title">10pc Handmade Plush Tulip Kit</h3>
+                <ul class="feature-list">
+                    <li>Complete Handmade Kit</li>
+                    <li>Perfect for Home/Office Decor</li>
+                    <li>High-Quality Plush Texture</li>
+                </ul>
+                <div class="price-tag">$14.63</div>
+                <a href="https://s.click.aliexpress.com/e/_c3eTZ0Z1" class="buy-link" target="_blank">Shop Tulip Kit</a>
+            </div>
+
+            <div class="product-option">
+                <span class="badge">30% OFF - Best Value</span>
+                <img src="for3.jpg" class="option-img" alt="400pc Pipe Cleaners">
+                <h3 class="option-title">400pc Bulk Chenille Stems</h3>
+                <ul class="feature-list">
+                    <li>4 Assorted DIY Colors</li>
+                    <li>Includes Floral Wires</li>
+                    <li>Bulk Pack for Large Projects</li>
+                </ul>
+                <div class="price-tag">$7.47</div>
+                <a href="https://s.click.aliexpress.com/e/_c4PEBAR5" class="buy-link" target="_blank">Shop 400pc Bulk</a>
+            </div>
+
+            <div class="product-option">
+                <span class="badge">New Arrival</span>
+                <img src="S5d6643851d7b49c8befcb542cd08ac8c4.jpg" class="option-img" alt="500pc Pastel Stems">
+                <h3 class="option-title">500pc Soft Pastel Twisting Sticks</h3>
+                <ul class="feature-list">
+                    <li>500 Pieces Extra Volume</li>
+                    <li>Soft Flexible Rods</li>
+                    <li>Premium Pastel Decor Shades</li>
+                </ul>
+                <div class="price-tag">$29.42</div>
+                <a href="https://s.click.aliexpress.com/e/_c3Q8EgwL" class="buy-link" target="_blank">Shop 500pc Pastel</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
